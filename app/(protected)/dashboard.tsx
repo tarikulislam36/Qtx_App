@@ -15,58 +15,6 @@ export default function DashboardScreen() {
       className="flex-1 bg-[#FAFAFA]"
       showsVerticalScrollIndicator={false}
     >
-      {/* HEADER */}
-
-      <View className="px-6 pt-16">
-        <Text className="text-slate-500 text-base">Welcome back</Text>
-
-        <Text className="text-4xl font-black text-slate-900 mt-2">
-          Tarikul 👋
-        </Text>
-
-        <Text className="text-slate-500 mt-3 text-base leading-7">
-          Manage quotations, invoices and products from one place.
-        </Text>
-      </View>
-
-      {/* OVERVIEW */}
-
-      <View className="px-6 mt-10">
-        <Text className="text-slate-900 text-xl font-bold">
-          Business Overview
-        </Text>
-
-        <View className="flex-row justify-between mt-5">
-          <View className="bg-white rounded-3xl p-5 w-[48%] border border-slate-100">
-            <Text className="text-slate-500">Revenue</Text>
-
-            <Text className="text-3xl font-black text-slate-900 mt-3">
-              ₹4.8L
-            </Text>
-          </View>
-
-          <View className="bg-white rounded-3xl p-5 w-[48%] border border-slate-100">
-            <Text className="text-slate-500">Invoices</Text>
-
-            <Text className="text-3xl font-black text-slate-900 mt-3">128</Text>
-          </View>
-        </View>
-
-        <View className="flex-row justify-between mt-4">
-          <View className="bg-white rounded-3xl p-5 w-[48%] border border-slate-100">
-            <Text className="text-slate-500">Quotations</Text>
-
-            <Text className="text-3xl font-black text-slate-900 mt-3">42</Text>
-          </View>
-
-          <View className="bg-white rounded-3xl p-5 w-[48%] border border-slate-100">
-            <Text className="text-slate-500">Products</Text>
-
-            <Text className="text-3xl font-black text-slate-900 mt-3">215</Text>
-          </View>
-        </View>
-      </View>
-
       {/* QUICK ACTIONS */}
 
       <View className="px-6 mt-10">
@@ -141,6 +89,58 @@ export default function DashboardScreen() {
 
             <ArrowRight size={20} color="#0f172a" />
           </TouchableOpacity>
+        </View>
+      </View>
+
+      {/* HEADER */}
+
+      <View className="px-6 pt-16">
+        <Text className="text-slate-500 text-base">Welcome back</Text>
+
+        <Text className="text-4xl font-black text-slate-900 mt-2">
+          Tarikul 👋
+        </Text>
+
+        <Text className="text-slate-500 mt-3 text-base leading-7">
+          Manage quotations, invoices and products from one place.
+        </Text>
+      </View>
+
+      {/* OVERVIEW */}
+
+      <View className="px-6 mt-10">
+        <Text className="text-slate-900 text-xl font-bold">
+          Business Overview
+        </Text>
+
+        <View className="flex-row justify-between mt-5">
+          <View className="bg-white rounded-3xl p-5 w-[48%] border border-slate-100">
+            <Text className="text-slate-500">Revenue</Text>
+
+            <Text className="text-3xl font-black text-slate-900 mt-3">
+              ₹4.8L
+            </Text>
+          </View>
+
+          <View className="bg-white rounded-3xl p-5 w-[48%] border border-slate-100">
+            <Text className="text-slate-500">Invoices</Text>
+
+            <Text className="text-3xl font-black text-slate-900 mt-3">128</Text>
+          </View>
+        </View>
+
+        <View className="flex-row justify-between mt-4">
+          <View className="bg-white rounded-3xl p-5 w-[48%] border border-slate-100">
+            <Text className="text-slate-500">Quotations</Text>
+
+            <Text className="text-3xl font-black text-slate-900 mt-3">42</Text>
+          </View>
+
+          <View className="bg-white rounded-3xl p-5 w-[48%] border border-slate-100">
+            <Text className="text-slate-500">Products</Text>
+
+            <Text className="text-3xl font-black text-slate-900 mt-3">215</Text>
+          </View>
         </View>
       </View>
 
