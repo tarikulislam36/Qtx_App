@@ -1,7 +1,6 @@
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 
 import {
-  ArrowRight,
   BarChart3,
   Clock3,
   FileText,
@@ -18,80 +17,76 @@ export default function DashboardScreen() {
       {/* QUICK ACTIONS */}
 
       <View className="px-6 mt-10">
-        <Text className="text-xl font-bold text-slate-900">Quick Actions</Text>
+        <View className="flex-row items-center justify-between">
+          <Text className="text-xl font-bold text-slate-900">
+            Quick Actions
+          </Text>
 
-        <View className="mt-5 gap-4">
-          <TouchableOpacity
-            // onPress={() =>
-            //   router.push("/quotations/create")
-            // }
-            className="bg-blue-600 rounded-3xl p-5 flex-row items-center justify-between"
-          >
-            <View className="flex-row items-center">
-              <View className="bg-white/20 p-3 rounded-2xl">
-                <FileText size={24} color="white" />
-              </View>
+          <TouchableOpacity>
+            <Text className="text-blue-600 font-semibold">View All</Text>
+          </TouchableOpacity>
+        </View>
 
-              <View className="ml-4">
-                <Text className="text-white font-bold text-lg">
-                  Create Quotation
-                </Text>
+        {/* ROW 1 */}
 
-                <Text className="text-blue-100 mt-1">
-                  Send professional quotations
-                </Text>
-              </View>
+        <View className="flex-row justify-between mt-5">
+          {/* QUOTATION */}
+
+          <TouchableOpacity className="w-[48%] bg-blue-600 rounded-[28px] p-5">
+            <View className="w-12 h-12 rounded-2xl bg-white/20 items-center justify-center">
+              <FileText size={24} color="white" />
             </View>
 
-            <ArrowRight size={20} color="white" />
+            <Text className="text-white font-bold text-lg mt-5">Quotation</Text>
+
+            <Text className="text-blue-100 mt-2 text-sm">Create & share</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity
-            // onPress={() => router.push("/invoices/create")}
-            className="bg-slate-900 rounded-3xl p-5 flex-row items-center justify-between"
-          >
-            <View className="flex-row items-center">
-              <View className="bg-white/10 p-3 rounded-2xl">
-                <Receipt size={24} color="white" />
-              </View>
+          {/* INVOICE */}
 
-              <View className="ml-4">
-                <Text className="text-white font-bold text-lg">
-                  Create Invoice
-                </Text>
-
-                <Text className="text-slate-300 mt-1">
-                  Generate invoices instantly
-                </Text>
-              </View>
+          <TouchableOpacity className="w-[48%] bg-slate-900 rounded-[28px] p-5">
+            <View className="w-12 h-12 rounded-2xl bg-white/10 items-center justify-center">
+              <Receipt size={24} color="white" />
             </View>
 
-            <ArrowRight size={20} color="white" />
+            <Text className="text-white font-bold text-lg mt-5">Invoice</Text>
+
+            <Text className="text-slate-300 mt-2 text-sm">Generate PDF</Text>
+          </TouchableOpacity>
+        </View>
+
+        {/* ROW 2 */}
+
+        <View className="flex-row justify-between mt-4">
+          {/* PRODUCT */}
+
+          <TouchableOpacity className="w-[48%] bg-white border border-slate-200 rounded-[28px] p-5">
+            <View className="w-12 h-12 rounded-2xl bg-slate-100 items-center justify-center">
+              <Package size={24} color="#0f172a" />
+            </View>
+
+            <Text className="text-slate-900 font-bold text-lg mt-5">
+              Product
+            </Text>
+
+            <Text className="text-slate-500 mt-2 text-sm">Manage catalog</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity
-            // onPress={() => router.push("/products/create")}
-            className="bg-white border border-slate-200 rounded-3xl p-5 flex-row items-center justify-between"
-          >
-            <View className="flex-row items-center">
-              <View className="bg-slate-100 p-3 rounded-2xl">
-                <Package size={24} color="#0f172a" />
-              </View>
+          {/* DELIVERY CHALLAN */}
 
-              <View className="ml-4">
-                <Text className="text-slate-900 font-bold text-lg">
-                  Add Product
-                </Text>
-
-                <Text className="text-slate-500 mt-1">Manage your catalog</Text>
-              </View>
+          <TouchableOpacity className="w-[48%] bg-emerald-50 border border-emerald-100 rounded-[28px] p-5">
+            <View className="w-12 h-12 rounded-2xl bg-emerald-100 items-center justify-center">
+              <Package size={24} color="#059669" />
             </View>
 
-            <ArrowRight size={20} color="#0f172a" />
+            <Text className="text-slate-900 font-bold text-lg mt-5">
+              Challan
+            </Text>
+
+            <Text className="text-slate-500 mt-2 text-sm">Delivery note</Text>
           </TouchableOpacity>
         </View>
       </View>
-
       {/* HEADER */}
 
       <View className="px-6 pt-16">
