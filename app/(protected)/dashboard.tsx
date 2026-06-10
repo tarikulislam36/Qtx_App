@@ -73,11 +73,9 @@ export default function DashboardScreen() {
               <Package size={24} color="#059669" />
             </View>
 
-            <Text className="text-slate-900 font-bold text-lg mt-5">
-              Challan
-            </Text>
+            <Text className="text-slate-900 font-bold text-lg mt-5">Lead</Text>
 
-            <Text className="text-slate-500 mt-2 text-sm">Delivery note</Text>
+            <Text className="text-slate-500 mt-2 text-sm">Manage leads</Text>
           </TouchableOpacity>
         </View>
       </View>
