@@ -81,7 +81,7 @@ export default function DashboardScreen() {
       </View>
       {/* HEADER */}
 
-      <View className="px-6 pt-16">
+      {/* <View className="px-6 pt-16">
         <Text className="text-slate-500 text-base">Welcome back</Text>
 
         <Text className="text-4xl font-black text-slate-900 mt-2">
@@ -91,7 +91,7 @@ export default function DashboardScreen() {
         <Text className="text-slate-500 mt-3 text-base leading-7">
           Manage quotations, invoices and products from one place.
         </Text>
-      </View>
+      </View> */}
 
       {/* OVERVIEW */}
     </ScrollView>
