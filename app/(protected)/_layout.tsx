@@ -7,6 +7,7 @@ export default function Layout() {
 
       <Tabs.Screen name="lead" options={{ title: "Leads" }} />
       <Tabs.Screen name="chat" options={{ title: "Chat" }} />
+      <Tabs.Screen name="invoice" options={{ title: "Invoice" }} />
     </Tabs>
   );
 }
