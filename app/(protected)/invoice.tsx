@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const Invoice = () => {
+const invoice = () => {
   return (
     <View>
       <Text>Invoice</Text>
@@ -9,4 +9,4 @@ const Invoice = () => {
   );
 };
 
-export default Invoice;
+export default invoice;
